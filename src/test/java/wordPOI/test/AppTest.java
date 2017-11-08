@@ -1,4 +1,4 @@
-package MyTest.test;
+package wordPOI.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
