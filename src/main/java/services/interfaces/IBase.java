@@ -1,4 +1,4 @@
-package services;
+package services.interfaces;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,8 +15,9 @@ import org.openxmlformats.schemas.officeDocument.x2006.customProperties.CTProper
  * Hello world!
  *
  */
-public class Base {
+public interface IBase {
     
+    /*
     public static void main(String[] args) throws InvalidFormatException, IOException {
 
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
@@ -45,18 +46,10 @@ public class Base {
 
         doc.enforceUpdateFields();
 
-        /*
-         * for (XWPFParagraph p : doc.getParagraphs()) { List<XWPFRun> runs = p.getRuns(); if (runs != null) { for
-         * (XWPFRun r : runs) { String text = r.getText(0); if (text != null && text.contains("~b �? �?•�?“.�?��?ž�?œ e~")) {
-         * text = text.replace("~b �? �?•�?“.�?��?ž�?œ e~", "haystack"); r.setText(text, 0); } } } } for (XWPFTable tbl :
-         * doc.getTables()) { for (XWPFTableRow row : tbl.getRows()) { for (XWPFTableCell cell : row.getTableCells()) {
-         * for (XWPFParagraph p : cell.getParagraphs()) { for (XWPFRun r : p.getRuns()) { String text = r.getText(0); if
-         * (text != null && text.contains("~b �? �?•�?“.�?��?ž�?œ e~")) { text = text.replace("~b �? �?•�?“.�?��?ž�?œ e~",
-         * "haystack"); r.setText(text,0); } } } } } }
-         */
-
         doc.write(new FileOutputStream(docOut));
         doc.close();
-
+        
+    
     }
+     */
 }
