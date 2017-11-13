@@ -8,7 +8,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
 @Path("/")
-public class Request {
+public class RequestService {
 
     @GET
     @Path("/readme")
